@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 4.5em;
+    color: rgb(192, 189, 189);
+    text-shadow: 2px 3px #ce0e0e;
+}
+
+h4 {
+    font-size: 3.5em;
+    color: whitesmoke;
+    text-shadow: 2px 3px #000000;
+}
+
+nav {
+    background-image: linear-gradient(to bottom, #2a261e, #222019, #1a1915, #13130f, #090907);
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.head {
+    height: 90vh;
+    background-image: url(/img/main.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+#down {
+    position: absolute;
+    top: 65vh;
+    padding: 20px;
+    color: whitesmoke;
+    text-shadow: 4px 4px #000000;
+    font-size: 5em;
+}
+
+#down:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    border: none;
+    opacity: 0.4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 25px;
+    background-image: linear-gradient(to bottom, #bba997, #b9a693, #b6a28f, #b49f8b, #b29c87, #ad9783, #a79380, #a28e7c, #988777, #8f8072, #85796e, #7c7269);
+    padding: 10px;
+    height: 20vh;
+    align-items: center;
+}
+
+
+.grid-container>div {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    justify-items: center;
+    width: 20vw;
+    height: 18vh;
+    margin-left: 3%;
+    outline: 2px solid rgb(247, 121, 38);
+    outline-offset: 1px;
+}
+
+.img{
+    width: 20vw;
+    height: 18vh;
+    object-fit: cover;
+}
+
+.textDiv{
+    color: white;
+    font-size: 16;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #424141;
+}
+
+.link1:hover .overlay {
+    opacity: 0.6;
+  }
+.link2:hover .overlay {
+    opacity: 0.6;
+  }
+.link3:hover .overlay {
+    opacity: 0.6;
+  }
+.link4:hover .overlay {
+    opacity: 0.6;
+  }
+
+
+#viewDiv {
+    background-color: None;
+    padding: 0;
+    margin-left: 10;
+    height: 80vh;
+}
+#viewDiv p{
+    text-align: center;
+    position: relative;
+}
+
+#textDiv2 {
+    padding: 0;
+    margin: 0;
+    height: 40vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.8em;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(192, 189, 189);
+    text-shadow: 2px 2px #000000;
+    background-image: linear-gradient(to bottom, #bba997, #b9a693, #b6a28f, #b49f8b, #b29c87, #ad9783, #a79380, #a28e7c, #988777, #8f8072, #85796e, #7c7269);
+}
+
+footer {
+    height: 20vh;
+    background-image: linear-gradient(to bottom, #2a261e, #222019, #1a1915, #13130f, #090907);
+    text-align: left;
+    overflow: hidden;
+    object-fit: cover;
+
+
+}
+
+footer p {
+    color: whitesmoke;
+    text-shadow: 2px 2px #000000;
+    
+}
+
+footer a {
+    margin-right: 0;
+    object-fit: cover;
+
+}
+
+.esri-view .esri-view-surface--inset-outline:focus::after {
+    outline: none !important;
+}

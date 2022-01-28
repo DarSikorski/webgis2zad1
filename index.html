@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I WORLD WAR</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.22/esri/themes/light/main.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://js.arcgis.com/4.22/"></script>
+    <script src="script/script.js" defer></script>
+    <script type="text/javascript">
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        }
+        $(document).ready(function() {
+            $('#down').on('click', function() {
+                $("html").scrollTop(0);
+                $('html, body').animate({
+                    scrollTop: $(".grid-container").offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <h1>I WOJNA ŚWIATOWA</h1>
+    </nav>
+    <header class="head">
+        <div>
+            <div>
+                <h1><strong>NAJSŁYNNIEJSZE MIEJSCA BITEW</strong></h1>
+                <h4>I wojny światowej 1914-1918</h4>
+            </div>
+            <br>
+            <hr>
+            <span id="down">&#8595;</span>
+
+        </div>
+    </header>
+    <div class="grid-container ">
+        <div class="link1" id = "l1">
+            <a><img class="img" src="img/verdun.jpg" alt=""></a>
+            <div class="overlay">
+                <div class="textDiv">Verdun</div>
+            </div>
+        </div>
+        <div class="link2" id = "l2">
+            <a><img class="img" src="img/somma_1916.jpg" alt=""></a>
+            <div class="overlay">
+                <div class="textDiv">Somma</div>
+            </div>
+        </div>
+        <div class="link3" id = "l3">
+            <a><img class="img" src="img/ypres.jpg" alt=""></a>
+            <div class="overlay">
+                <div class="textDiv">Ypres</div>
+            </div>
+        </div>
+        <div class="link4" id = "l4">
+            <a class="link"><img class="img" src="img/tannen.jpg" alt="" onclick="zooom()"></a>
+            <div class="overlay">
+                <div class="textDiv">Tannenberg</div>
+            </div>
+        </div>
+    </div>
+    <div id="viewDiv"></div>
+    <div id="textDiv2">
+        <p id ="text">I wojna światowa (przed II wojną światową nazywana „Wielką Wojną”) – wojna światowa, trwająca od 28 lipca 1914 do 11 listopada 1918 pomiędzy ententą (Trójporozumieniem), tj. Wielką Brytanią, Francją, Rosją, Serbią, Japonią, Włochami (od 1915) i Stanami Zjednoczonymi (od 1917) a państwami centralnymi (Trójprzymierzem), tj. Austro-Węgrami i Niemcami, wspieranymi przez Imperium Osmańskie oraz Bułgarię.
+
+            Był to największy konflikt zbrojny w Europie od czasu wojen napoleońskich. Wojna zakończyła się klęską państw centralnych, likwidacją mocarstw Świętego Przymierza oraz powstaniem w Europie Środkowej i Południowej licznych państw narodowych. Była też jedną z głównych przyczyn rewolucji lutowej i rewolucji październikowej w Rosji. W jej wyniku zginęło ponad 14 milionów ludzi. Mimo ogromu strat i wstrząsu wywołanego nimi, wojna ta nie rozwiązała większości konfliktów, co 21 lat później doprowadziło do wybuchu II wojny światowej. I wojna światowa była zderzeniem XX-wiecznej techniki z XIX-wieczną strategią i taktyką. Wybuch I wojny światowej wyznaczył symboliczny koniec wieku XIX oraz koniec hegemonii europejskiej na świecie. Od jej zakończenia coraz większą rolę w stosunkach międzynarodowych zaczęły odgrywać Stany Zjednoczone i utworzony w 1922 r. ZSRR.</p>
+
+    </div>
+    <div>
+    <footer>
+        <p style="overflow: hidden"><br><br>Autor: Dariusz Sikorski<br><br><br><br> © 2022 Zastrzeżenie praw autorskich
+            <a class="fb" href="https://www.facebook.com/groups/361740998492776"><img src="img/fb.svg" alt="" />
+            </a>
+    </footer>
+    </div>
+    
+
+
+</body>
+
+</html>
